@@ -11,7 +11,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/theninjacoder-uz/jenkins-demo.git', branch: 'master', credentialsId: 'test'])
+        git([url: 'https://github.com/theninjacoder-uz/TripProject-main.git', branch: 'master', credentialsId: 'test'])
 
       }
     }
