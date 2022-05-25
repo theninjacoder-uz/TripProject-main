@@ -22,10 +22,10 @@ pipeline {
       }
     }
 
-    stage("docker run") {
-      steps{
-       sh 'docker-compose -f ~/var/lib/jenkins/workspace/test/docker-compose.yml pull dbup'
-      }
-    }
+//     stage("docker run") {
+//       steps{
+//        sh 'docker-compose -f ~/var/lib/jenkins/workspace/test/docker-compose.yml pull dbup'
+//       }
+//     }
 }
 }
