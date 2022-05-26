@@ -9,12 +9,12 @@ pipeline {
   }
   agent any
   stages {
-    stage('Cloning Git') {
-      steps {
-        git([url: 'https://github.com/theninjacoder-uz/jenkins-demo.git', branch: 'master', credentialsId: 'test'])
+//     stage('Cloning Git') {
+//       steps {
+//         git([url: 'https://github.com/theninjacoder-uz/TripProject-main.git', branch: 'master', credentialsId: 'test'])
 
-      }
-    }
+//       }
+//     }
 
     stage("package") {
       steps{
@@ -22,10 +22,10 @@ pipeline {
       }
     }
 
-    stage("docker run") {
-      steps{
-       sh 'docker compose up'
-      }
-    }
+//     stage("docker run") {
+//       steps{
+//        sh 'docker-compose -f ~/var/lib/jenkins/workspace/test/docker-compose.yml pull dbup'
+//       }
+//     }
 }
 }
